@@ -4,4 +4,4 @@ README.txt
 Rakefile
 bin/microsoft_ngram
 lib/microsoft_ngram.rb
-test/test_microsoft_ngram.rb
+spec/microsoft_ngram_spec.rb
