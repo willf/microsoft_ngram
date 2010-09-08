@@ -1,4 +1,5 @@
-require 'rest_client'
+require 'rubygems'
+require 'rest-client'
 
 class MicrosoftNgram
   VERSION = '1.0.0'
@@ -20,6 +21,8 @@ class MicrosoftNgram
   attr_accessor :model
   # Simple debug mode. If non-false, GET calls are display
   attr_accessor :debug
+  # Ngram size based on model
+  attr_accessor :ngram_size
   
   def initialize(args = {}) 
     @user_token = args["user_token"] || args[:user_token] || ENV["NGRAM_TOKEN"]
@@ -27,11 +30,12 @@ class MicrosoftNgram
       raise "Must provide user token as NGRAM_TOKEN env variable or as :user_token => token. To get a token, see http://web-ngram.research.microsoft.com/info/ "
     end
     # probably shouldn't change
-    @model = args["model"] || args[:model] ||  "bing-body/jun09/3"
+    @model = args["model"] || args[:model] || MicrosoftNgram.models().find_all{|x| x =~ /body/}.max
     unless MicrosoftNgram.defined_model?(@model)
-      raise "Invalid models. Valid models are #{@@models.join('; ')}"
+      raise "Invalid model: #{@model}. Valid models are #{@@models.join('; ')}"
     end
     @debug = (args["debug"] || args[:debug] || nil)
+    @ngram_size = @model.split(/\//)[-1].to_i
   end
   
   def get(op,phrase,args)
