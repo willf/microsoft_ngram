@@ -5,3 +5,4 @@ Rakefile
 bin/microsoft_ngram
 lib/microsoft_ngram.rb
 spec/microsoft_ngram_spec.rb
+examples/segment.rb
