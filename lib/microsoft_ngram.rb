@@ -1,18 +1,18 @@
 require "microsoft_ngram/version"
 
-module MicrosoftNgram
+module Bing
 
-  class MicrosoftNgram
+  class Ngram
 
     @@endpoint = "http://web-ngram.research.microsoft.com/rest/lookup.svc/"
     @@models = nil
   
-    def MicrosoftNgram.models()
+    def self.models()
       @@models=RestClient.get(@@endpoint).split(/\s+/)
     end
   
-    def MicrosoftNgram.defined_model?(model)
-      MicrosoftNgram.models() if @@models == nil # cache the current models
+    def self.defined_model?(model)
+      Bing::Ngram.models() if @@models == nil # cache the current models
       @@models.include?(model)
     end 
   
@@ -30,8 +30,8 @@ module MicrosoftNgram
         raise "Must provide user token as NGRAM_TOKEN env variable or as :user_token => token. To get a token, see http://web-ngram.research.microsoft.com/info/ "
       end
       # probably shouldn't change
-      @model = args["model"] || args[:model] || MicrosoftNgram.models().find_all{|x| x =~ /body/}.max
-      unless MicrosoftNgram.defined_model?(@model)
+      @model = args["model"] || args[:model] || Bing::Ngram.models().find_all{|x| x =~ /body/}.max
+      unless Bing::Ngram.defined_model?(@model)
         raise "Invalid model: #{@model}. Valid models are #{@@models.join('; ')}"
       end
       @debug = (args["debug"] || args[:debug] || nil)
@@ -90,7 +90,7 @@ module MicrosoftNgram
     end
   
     # spell-checking 
-    # MicrosoftNgram.new(:debug=>nil,:model=>'bing-body/jun09/1').jps(edits1("appresiate").uniq).sort{|a,b| b[1] <=> a[1]}[0..30]
+    # Bing::Ngram.new(:debug=>nil,:model=>'bing-body/jun09/1').jps(edits1("appresiate").uniq).sort{|a,b| b[1] <=> a[1]}[0..30]
   
   end
   
