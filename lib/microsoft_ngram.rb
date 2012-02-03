@@ -1,4 +1,5 @@
 require "microsoft_ngram/version"
+require "rest-client"
 
 module Bing
 
