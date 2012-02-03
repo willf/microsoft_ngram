@@ -72,6 +72,17 @@ To use the query model for the same thing:
     update -1.08291
     vista -1.199022
     installer -1.248958
+    
+Sample Script
+-------------
+
+```ruby
+require 'rubygems'
+require 'microsoft_ngram'
+l = []
+Bing::Ngram.new(:model => "bing-body/apr10/5").generate('a bum',50){ |w,_| l << w }
+l.join("; ")
+```
 
 More Info
 ---------
