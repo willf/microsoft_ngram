@@ -1,13 +1,11 @@
-# -*- ruby -*-
+require 'bundler'
+require "bundler/gem_tasks"
+require 'rspec/core/rake_task'
+require 'microsoft_ngram'
 
-require 'rubygems'
-require 'hoe'
-require './lib/microsoft_ngram.rb'
+Bundler::GemHelper.install_tasks
 
-Hoe.spec 'MicrosoftNgram' do |p|
-  rubyforge_name = 'microsoft_ngram'
-  developer 'Will Fitzgerald', 'will.fitzgerald@pobox.com'
-end 
+RSpec::Core::RakeTask.new('spec')
 
-
-# vim: syntax=Ruby
+# If you want to make this the default task
+task :default => :spec
