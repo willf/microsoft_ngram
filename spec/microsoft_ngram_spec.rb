@@ -1,9 +1,9 @@
-require 'rubygems'
-require 'spec'
-require File.dirname(__FILE__) + '/../lib/microsoft_ngram'
+require 'spec_helper'
 
-describe MicrosoftNgram do
+describe MicrosoftNgram do  
 
+  include ::MicrosoftNgram
+  
   it "should return a list of models" do
     MicrosoftNgram.models.size.should > 0
   end 
