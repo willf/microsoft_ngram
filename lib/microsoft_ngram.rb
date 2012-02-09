@@ -12,18 +12,18 @@ module Bing
     def initialize (spec)
       def parse_month(m)
         case m
-          when 'jan': '01'
-          when 'feb': '02'
-          when 'mar': '03'        
-          when 'apr': '04'        
-          when 'may': '05'        
-          when 'jun': '06'        
-          when 'jul': '07'        
-          when 'aug': '08'        
-          when 'sep': '09'        
-          when 'oct': '10'        
-          when 'nov': '11'
-          when 'dec': '12'
+          when 'jan' then '01'
+          when 'feb' then '02'
+          when 'mar' then '03'
+          when 'apr' then '04'
+          when 'may' then '05'
+          when 'jun' then '06'
+          when 'jul' then '07'
+          when 'aug' then '08'
+          when 'sep' then '09'
+          when 'oct' then '10'
+          when 'nov' then '11'
+          when 'dec' then '12'
           else '??'
         end
       end
