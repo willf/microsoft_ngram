@@ -7,8 +7,8 @@ require 'memoize'
 
 include Memoize
 
-$bi_body_model = MicrosoftNgram.new(:model => "bing-body/jun09/2", :debug=>false)
-$uni_body_model = MicrosoftNgram.new(:model => "bing-body/jun09/1", :debug=>false)
+$bi_body_model = MicrosoftNgram.new(:model => "bing-body/apr10/2", :debug=>false)
+$uni_body_model = MicrosoftNgram.new(:model => "bing-body/apr10/1", :debug=>false)
 $magic_pr =  -13.419954 # twice as uncommon as "kraig" last word in Bing 100k list
 
 # Returns all the splits of a string up to a given length

@@ -21,12 +21,12 @@ Usage
 
 To get a list of currently available models:
  
-    > MicrosoftNgram.models
-    => ["bing-anchor/jun09/1", "bing-anchor/jun09/2", "bing-anchor/jun09/3", "bing-anchor/jun09/4", "bing-body/jun09/1", "bing-body/jun09/2", "bing-body/jun09/3", "bing-title/jun09/1", "bing-title/jun09/2", "bing-title/jun09/3", "bing-title/jun09/4", "bing-query/jun09/1", "bing-query/jun09/2", "bing-query/jun09/3"] 
+    >> Bing::Ngram.models
+    => ["bing-anchor/jun09/1", "bing-anchor/jun09/2", "bing-anchor/jun09/3", "bing-anchor/jun09/4", "bing-body/jun09/1", "bing-body/jun09/2", "bing-body/jun09/3", "bing-title/jun09/1", "bing-title/jun09/2", "bing-title/jun09/3", "bing-title/jun09/4", "bing-query/jun09/1", "bing-query/jun09/2", "bing-query/jun09/3", "bing-title/apr10/1", "bing-title/apr10/2", "bing-title/apr10/3", "bing-title/apr10/4", "bing-title/apr10/5", "bing-anchor/apr10/1", "bing-anchor/apr10/2", "bing-anchor/apr10/3", "bing-anchor/apr10/4", "bing-anchor/apr10/5", "bing-body/apr10/1", "bing-body/apr10/2", "bing-body/apr10/3", "bing-body/apr10/4", "bing-body/apr10/5"] 
  
 To see the default model:
 
-    > MicrosoftNgram.new.model            
+    > MicrosoftNgram.default_model            
     => "bing-body/jun09/3" 
 
 Parameters to the initializer are:
@@ -73,6 +73,15 @@ To use the query model for the same thing:
     vista -1.199022
     installer -1.248958
     
+You can also get a list of the N most likely candidates (could be slower for long lists):
+
+    > MicrosoftNgram.new(:model => 'bing-query/jun09/3').generate_list("Microsoft Windows",5).each  {|x| puts x.join(' ')}
+    xp -0.5429792
+    </s> -1.062959
+    update -1.08291
+    vista -1.199022
+    installer -1.248958 
+       
 Sample Script
 -------------
 
