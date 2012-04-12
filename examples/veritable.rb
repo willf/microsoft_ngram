@@ -4,7 +4,7 @@ require 'trollop'
 
 def main
   opts = Trollop::options do
-    banner "Generate phrases from Bing's Ngram server based on patterns— specify pattern on command line as alternating strings and ints"
+    banner "Generate phrases from Bing Ngram server based on patterns specify pattern on command line as alternating strings and ints"
     opt :max_wild_children, "Max number of wildcard tokens to generate", :default => 20
     opt :max_literal_children, "Max number of tokens to generate after literal strings", :default => 100
     opt :model, "Corpus model to use", :default => Bing::Ngram.default_model

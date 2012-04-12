@@ -1,0 +1,56 @@
+genetic </html>	0.0	-9.18642
+genetic </html> genetic	-1.461933	-10.64835
+genetic </html> http	-1.196779	-10.3832
+genetic </html> this	-1.08493	-10.27135
+genetic </html> tramadol	-1.068799	-10.25522
+genetic <html xmlns="http://www.w3.org/1999/xhtml">	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> direction	-2.290546	-16.10624
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> php	-2.218435	-16.03413
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> 2008	-2.217209	-16.03291
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> 2	-2.179985	-15.99568
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> div	-2.176209	-15.99191
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> vocab	-2.132661	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> a	-2.050723	-15.86642
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> html	-2.011272	-15.82697
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> dir	-2.001758	-15.81745
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> class	-1.926496	-15.74219
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> namespace	-1.919733	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> this	-1.857464	-15.67316
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> netuix	-1.793682	-15.60938
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> id	-1.76005	-15.57575
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> datatypes	-1.670337	-15.48603
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> lang	-1.656739	-15.47243
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> p	-1.246438	-15.06213
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> xmlns	-1.019544	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> xml	-0.7934132	-14.60911
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> head	-0.6244137	-14.44011
+genetic </html>	0.0	-9.18642
+genetic </html> genetic	-1.461933	-10.64835
+genetic </html> http	-1.196779	-10.3832
+genetic </html> this	-1.08493	-10.27135
+genetic </html> tramadol	-1.068799	-10.25522
+genetic <html xmlns="http://www.w3.org/1999/xhtml">	0.0	-13.8157
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> </html>	0.0	-15.82697
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   </body>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     </div>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">       <p>The server encountered an error processing the request. See server logs for more details.</p>	0.0	-31.33556
+genetic <html xmlns="http://www.w3.org/1999/xhtml">       <p class="heading1">Request Error</p>	0.0	-34.06448
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <div id="content">	0.0	-18.3682
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   <body>	0.0	-16.23841
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   </head>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <style>BODY { color: #000000	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <title>Request Error</title>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   <head>	0.0	-14.44011
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> <html xmlns="http://www.w3.org/1999/xhtml">	0.0	-17.9501
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> </html>	0.0	-15.82697
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   </body>	0.0	-16.23841
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     </div>	0.0	-15.99191
+genetic <html xmlns="http://www.w3.org/1999/xhtml">       <p>The server encountered an error processing the request. See server logs for more details.</p>	0.0	-31.33556
+genetic <html xmlns="http://www.w3.org/1999/xhtml">       <p class="heading1">Request Error</p>	0.0	-34.06448
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <div id="content">	0.0	-18.3682
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   <body>	0.0	-16.23841
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   </head>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <style>BODY { color: #000000	0.0	-24.60427
+genetic <html xmlns="http://www.w3.org/1999/xhtml">     <title>Request Error</title>	0.0	-24.17782
+genetic <html xmlns="http://www.w3.org/1999/xhtml">   <head>	0.0	0.0
+genetic <html xmlns="http://www.w3.org/1999/xhtml"> <html xmlns="http://www.w3.org/1999/xhtml">	0.0	-17.9501

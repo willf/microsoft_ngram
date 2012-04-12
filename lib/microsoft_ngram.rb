@@ -8,29 +8,30 @@ module Bing
   class ModelSpec
     
     attr_accessor :model_type, :date, :size
+
+    def ModelSpec.parse_month(m)
+      case m
+        when 'jan' then '01'
+        when 'feb' then '02'
+        when 'mar' then '03'
+        when 'apr' then '04'
+        when 'may' then '05'
+        when 'jun' then '06'
+        when 'jul' then '07'
+        when 'aug' then '08'
+        when 'sep' then '09'
+        when 'oct' then '10'
+        when 'nov' then '11'
+        when 'dec' then '12'
+        else '??'
+      end
+    end
     
     def initialize (spec)
-      def parse_month(m)
-        case m
-          when 'jan' then '01'
-          when 'feb' then '02'
-          when 'mar' then '03'
-          when 'apr' then '04'
-          when 'may' then '05'
-          when 'jun' then '06'
-          when 'jul' then '07'
-          when 'aug' then '08'
-          when 'sep' then '09'
-          when 'oct' then '10'
-          when 'nov' then '11'
-          when 'dec' then '12'
-          else '??'
-        end
-      end
       parts = spec.split('/')
       @model_type = parts[0].split('-')[1] # 'bing-body'
       yr = parts[1].split(/\D/)[-1].to_i + 2000
-      month = parse_month(parts[1].split(/\d/)[0])
+      month = ModelSpec.parse_month(parts[1].split(/\d/)[0])
       @date = "#{yr}-#{month}"
       @size = parts[2].to_i
     end

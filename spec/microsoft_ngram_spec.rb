@@ -57,5 +57,22 @@ describe Bing::Ngram do
      end
      count.should == 10
    end
+end
+
+describe Bing::ModelSpec do
+  it 'should parse a month correctly' do
+    Bing::ModelSpec.parse_month('jan').should == '01'
+  end
+  
+  it 'should parse an unknown thing correctly' do
+    Bing::ModelSpec.parse_month('asdfasdf').should == '??'
+  end
+  
+  it 'should parse a spec correctly' do
+    x = Bing::ModelSpec.new("bing-body/jun09/1")
+    x.model_type.should == 'body'
+    x.date.should == '2009-06'
+    x.size.should == 1
+  end
 end 
 

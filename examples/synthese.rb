@@ -57,4 +57,3 @@ def main
 end
 
 main
-  
